@@ -16,3 +16,8 @@ jobs:
 
     - name: Install dependencies
       run: make
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: cmd/ # or path/to/artifact
